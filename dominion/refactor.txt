@@ -1,0 +1,20 @@
+Pranav Ramesh
+4/19/2016
+Documented Changes
+
+Changes in dominion.c:
+
+1. I chose 5 cards to refactor. They were smithy, village, adventurer, remodel, and council room.
+2. I created 5 five functions with their respective names and then copied and pasted the code from each individual case in the switch statement into its respective function.
+3. I added the appropriate parameters for each function depending on which variables were being passed in.
+4. In the switch statement under each case, I added the function call to the respective function that I had created.
+
+Changes in dominion.h:
+
+1. I added function declarations as how to it was done for the other functions. Here are the function declarations outlined below.
+
+    int smithyCard(int currentPlayer, struct gameState *state, int handPos);
+    int adventurerCard(struct gameState *state, int currentPlayer, int drawntreasure, int temphand[10], int cardDrawn);
+    int villageCard(int currentPlayer, struct gameState *state, int handPos);
+    int remodelCard(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos, int j);
+    int councilRoomCard(int currentPlayer, struct gameState *state, int handPos);
