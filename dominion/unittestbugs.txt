@@ -1,0 +1,9 @@
+Pranav Ramesh
+CS 362
+
+I did not run into much bugs while writing the unit tests. But one bug I ran
+into was that when I was writing the unit tests was the actual testing part.
+When I would be texting different things I used values that made it fail and
+pass at the same time because the logic I had written did not check the test
+effectively. Other than that I did not run into any other bugs while coding even
+though I ran into this bug multiple times.

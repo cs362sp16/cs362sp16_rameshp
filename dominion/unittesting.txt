@@ -1,0 +1,10 @@
+Pranav Ramesh
+CS 362
+
+For this assignment, we had to use gcov to measure to test coverage for the unit
+tests that we had to write. In the output file, it outputs all the tests whether
+it passes or not and the coverage. The coverage I got was 18.60% of 559 lines.
+Although, this coverage is not as high as it should be, it means that I need to
+add more depth in my tests. Some of the unit tests were difficult to write as I
+had to determine what the output of the given function was. Finding the correct
+syntax for what the Makefile for the unit tests should like was also a challenge.
