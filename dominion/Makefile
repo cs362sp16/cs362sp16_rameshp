@@ -27,7 +27,6 @@ cardtest:
 		gcc -o cardtest3 cardtest3.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 		gcc -o cardtest4 cardtest4.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-
 unittestresult:
 		rm -f unittestresults.out
 		./unittest1 >> unittestresults.out
@@ -35,6 +34,26 @@ unittestresult:
 		./unittest3 >> unittestresults.out
 		./unittest4 >> unittestresults.out
 		gcov dominion.c >> unittestresults.out
+
+randomtest:
+		gcc -o randomtestadventurer randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+		gcc -o randomtestcard1 randomtestcard1.c dominion.o rngs.o $(CFLAGS)
+		gcc -o randomtestcard2 randomtestcard2.c dominion.o rngs.o $(CFLAGS)
+
+randomtest1result:
+		rm -f randomtestcard1.out
+		./randomtestcard1 42 >> randomtestcard1.out
+		gcov dominion.c >> randomtestcard1.out
+
+randomtest2result:
+		rm -f randomtestcard2.out
+		./randomtestcard2 >> randomtestcard2.out
+		gcov dominion.c >> randomtestcard2.out
+
+randomtestadventurerresult:
+		rm -f randomtestadventurerresult.out
+		./randomtestadventurer 42 >> randomtestadventurer.out
+		gcov dominion.c >> randomtestadventurer.out
 
 all: playdom player
 

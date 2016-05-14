@@ -765,7 +765,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     // converted to function
     case council_room:
       councilRoomCard(currentPlayer, state, handPos);
-      
+
     case feast:
       //gain card with cost up to 5
       //Backup hand
