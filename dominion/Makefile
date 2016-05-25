@@ -55,7 +55,15 @@ randomtestadventurerresult:
 		./randomtestadventurer 42 >> randomtestadventurer.out
 		gcov dominion.c >> randomtestadventurer.out
 
+testdominion:
+		gcc -o testdominion testdominion.c -g  dominion.o rngs.o interface.o $(CFLAGS)
+		rm -f testdominion.out
+		./testdominion 42 >> testdominion.out
+
+difftestdominion:
+		gcc -o testdominion testdominion.c -g  dominion.o rngs.o interface.o $(CFLAGS)
+
 all: playdom player
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 testdominion player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM

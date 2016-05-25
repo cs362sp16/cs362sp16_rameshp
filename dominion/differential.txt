@@ -1,0 +1,9 @@
+Pranav Ramesh
+CS 362
+
+This is not an ideal case for differential testing because there are too many
+issues with the overall game. This makes it very difficult to decide who is
+correct. The code coverage was not what was expected in either code that I
+tested. My coverage was well below 60% which told me that my code needs more
+revisions. I believe there is a bug within my random tester that creates an
+issue for appropriate code coverage.
