@@ -1,4 +1,7 @@
 Bug Report 2
+Pranav Ramesh
+CS 362
+Final Project
 
 There is a bug in remodelCardEffect() as it does not behave correctly.
 

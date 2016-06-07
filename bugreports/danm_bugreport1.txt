@@ -1,4 +1,7 @@
 Bug Report 1
+Pranav Ramesh
+CS 362
+Final Project
 
 There is a bug in smithyCardEffect() as it does not behave correctly.
 
