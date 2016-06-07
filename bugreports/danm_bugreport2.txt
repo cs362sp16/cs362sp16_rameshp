@@ -1,0 +1,17 @@
+Bug Report 2
+
+There is a bug in remodelCardEffect() as it does not behave correctly.
+
+Description: The remodel card trashes a card from the current hand that you have
+and gain a card costing up to two coins more than the original card. However, the
+current implementation does not allow the player to gain another card matching
+that criteria. 
+
+To fix the bug we would have to alter the main if statement as follows:
+
+	if ((getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2))
+
+This should produce the appropriate result.
+
+Priority: High
+Severity: High

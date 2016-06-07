@@ -1,0 +1,16 @@
+Bug Report 3
+
+There is a bug in councilRoomCardEffect() as it does not behave correctly.
+
+Description: Council Room is an action card from the base set. When this card is chosen the player has to draw four cards and make all the other players draw one card as well.
+
+To fix the bug we would have to alter the if statement as follows:
+
+	if(i != player[i]){
+		drawCard(i, game);
+	}
+
+This should produce the appropriate result.
+
+Priority: High
+Severity: Medium

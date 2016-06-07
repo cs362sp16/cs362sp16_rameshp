@@ -1,0 +1,16 @@
+Bug Report 1
+
+There is a bug in smithyCardEffect() as it does not behave correctly.
+
+Description: Smithy is an action card from the base set. When this card is chosen
+you should be allowed to draw three cards, however, this current implementation
+does not allow that to happen.
+
+To fix the bug we would have to alter the for loop as follows:
+
+	for (i = 0; i < 3; i++)
+
+This should produce the appropriate result.
+
+Priority: High
+Severity: Medium
