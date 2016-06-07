@@ -1,0 +1,33 @@
+Fixing a Bug in my Code: numHandCards()
+Pranav Ramesh
+CS 362
+Final Project
+
+Mihai Dan went ahead and ran tests and evaluated my code and he provided me with some
+great insight as to why some things were not working as they should’ve, especially in
+my numHandCards() function. The purpose of this function was for it to return the number
+of cards in each player’s hand. However, in my code, the value for Player 1 was returned
+successfully but when it was Player 2’s turn, the function returned an error.
+
+After reading through Mihai’s analysis of the numHandCards() function, I went ahead and
+started to debug that function on my own. This was my first time debugging this specific
+function so I had to run the code a few times through to make sure I fully understood
+what output the function was giving. I did not want to rely only on Mihai’s analysis to
+figure out what was going on. Furthermore, I decided to alter one of the random unit tests
+I wrote for a previous assignment to accurately assess where the bug may be. And then I
+used the GNU Project Debugger to verify the values that the function returned. During this
+process I was able to find what I think was the bug, but when I ran the tests not all of
+them passed, however a majority of them did pass. The results after using the debugger to
+step through the function proved beneficial in getting better test results thereafter.
+
+I think the main Agan principle that was used in figuring out the bug in the
+numHandCards() function was “Understand the System” principle. A general rule for testing
+is that you should be completely aware of exactly what the code does and what it does not
+do. In this particular case, even though I was debugging one function in dominion.c, I still
+had to take into account the different functions that the numHandCards() function relied
+upon. After gaining the proper understanding of all the other functions, it allowed me to
+debug with ease and not question what each function does as I came across it. Another
+principle that I thought was of importance was Quit Thinking and Look. This principle
+is pretty self explanatory from the name, but it made me look only at the facts and not
+base anything off my assumptions. I think these are the two most important Agan principles
+that I used when debugging the numHandCards() function.
