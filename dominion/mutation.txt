@@ -1,0 +1,21 @@
+Mutation Testing: Dominion
+Pranav Ramesh
+CS 362
+Final Project
+
+I chose to do mutation testing for this part of the project. I chose two cards to perform mutation testing, baron and smithy. I created two different mutants for each of the two cards to be able to explore the concept of mutation testing in more depth. To create the mutants for the different cards, I had to make sure those mutants would prove beneficial in this exercise. I wanted to choose mutants that would alter the outcome of the card significantly and thus allowing it to be a successful mutant.
+
+To test, I ran the mutant code and compared those results to the original source code provided.
+
+FYI, the mutation code is provided in the “mutation testing” folder within the “dominion” directory. 
+
+————————————————————————————————————————————————————————————————————————————————————
+RESULTS:
+
+The first card I performed mutant testing was on: BARON
+
+When I ran the original source code with the test functions I had originally written both tests had passed. When I ran the mutant code along those same tests slightly modified to work, the first test passed and the second one failed. In short, mutant 1 passed but mutant 2 did not pass.
+
+The second card I performed mutant testing was on: SMITHY
+
+This card was not as easy to do mutant testing for me because I ran into a few errors when I tried to compile the code but once I got past those errors, it was pretty easy. When I ran the original source code with the test functions I had originally written both tests only one had passed and the other one had failed. When I ran the mutant code along those same tests slightly modified to work, both tests failed the first time around and then the second time around the first one failed and the second one passed.
